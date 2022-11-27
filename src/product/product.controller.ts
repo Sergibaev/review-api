@@ -8,8 +8,8 @@ export class ProductController {
     async create(@Body() dto: Omit<ProductModel, '_id'>) {}
 
     @Get(':id')
-    async get(@Param('id') id: string) {}
-
+    async get(@Param('id') id: string) { }
+    
     @Delete(':id')
     async delete(@Param('id') id: string) {}
 
